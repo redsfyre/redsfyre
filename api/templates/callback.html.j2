@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>spotify-github-profile</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    .green-spotify {
+      background-color: #1db954 !important;
+    }
+
+    @media only screen and (max-width: 992px) {
+      nav .brand-logo {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="">
+  <nav class="green-spotify" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">spotify-github-profile</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://github.com/kittinan/spotify-github-profile" target="_BLANK">Github</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="https://github.com/redsfyre/redsfyre" target="_BLANK">Github</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h2 class="header center orange-text">Markdown code</h2>
+
+      <div class="row center">
+        <div class="row">
+          <div class="col s6 m4">
+            <label>
+              <input type="checkbox" class="filled-in" checked="checked" id="cover-image-checkbox" />
+              <span>Cover Image</span>
+            </label>
+          </div>
+          <div class="col s6 m4"></div>
+          <div class="col s6 m4"></div>
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="col s0 m1"></div>
+        <div class="col s12 m10">
+          <textarea id="markdown-code"
+            style="width: 100%;height: 100px; padding: 10px;"></textarea>
+        </div>
+        <div class="col s0 m1"></div>
+      </div>
+
+      <div class="row center">
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+          <button class="waves-effect waves-light btn green darken-3" data-clipboard-target="#markdown-code">
+            <i class="material-icons left">content_copy</i> Copy to clipboard
+          </button>
+        </div>
+      </div>
+
+      <div class="row center">
+        <img id="example-view" />
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <footer class="page-footer green-spotify">
+    <div class="footer-copyright">
+      <div class="container center">
+        Made with <i class="material-icons red-text">favorite</i></i> by <a class="grey-text text-darken-4"
+          href="https://github.com/redsfyre/redsfyre" target="_BLANK">redsfyre</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+
+  <script>
+    var uid = "{{uid}}";
+    var viewUrl = "{{BASE_URL}}/view?";
+    var markdownCodeTextArea = $('#markdown-code');
+    var exampleView = $("#example-view");
+    var urlParams = {
+      uid: uid,
+      cover_image: true,
+    };
+
+    function updateUrl() {
+      var viewUrlWithParams = viewUrl + $.param(urlParams, true);
+      exampleView.attr('src', viewUrlWithParams);
+      markdownCodeTextArea.text(`[![redsfyre](${viewUrlWithParams})](https://github.com/redsfyre/redsfyre)`);
+    }
+
+    updateUrl();
+
+    var coverImageCheckbox = $("#cover-image-checkbox");
+    coverImageCheckbox.change(function() {
+        if(this.checked) {
+          urlParams.cover_image = true;
+        } else {
+          urlParams.cover_image = false;
+        }
+        updateUrl();
+    });
+  </script>
+
+  <script>
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function (e) {
+      M.toast({
+        html: 'Copied!'
+      })
+
+      e.clearSelection();
+    });
+  </script>
+
+</body>
+
+</html>
