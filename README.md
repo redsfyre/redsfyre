@@ -8,7 +8,7 @@ Running on Vercel serverless function, store data in Firebase (store only access
 
 - Click `Connect with Spotify` button below to grant permission
 
-[<img src="/img/btn-spotify.png">](https://spotify-github-profile.vercel.app/api/login)
+[<img src="/img/btn-spotify.png">](https://REDSFYRE.vercel.app/api/login)
 
 ## Example
 
