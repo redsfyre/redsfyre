@@ -10,6 +10,7 @@ class DevOpsEngineer:
         self.name = "Yasin Isa Yildirim"
         self.role = "DevOps Engineer"
         self.language_spoken = ["tr_TR", "en_US"]
+        self.email = "yasinisa@yildirim.dev"
 
     def say_hi(self):
         print("Introduce yourself or I won't speak")
