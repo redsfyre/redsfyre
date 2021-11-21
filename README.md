@@ -17,5 +17,5 @@ class DevOpsEngineer:
 me = DevOpsEngineer()
 me.say_hi()
 ```
-| Since I couldn't learn the markdown syntax, <br> I couldn't manage to put spotify side by side with this code block :(	| [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=2xom3cnad7budvi6jeposxcnj&cover_image=true)](https://open.spotify.com/user/2xom3cnad7budvi6jeposxcnj) 	|
+| I couldn't manage to put this spotify side by side with the above code block. <br> Because I couldn't learn the markdown syntax :(	| [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=2xom3cnad7budvi6jeposxcnj&cover_image=true)](https://open.spotify.com/user/2xom3cnad7budvi6jeposxcnj) 	|
 |---	|---	|
