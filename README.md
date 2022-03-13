@@ -1,5 +1,4 @@
 ### Welcome to my f*cking world 🖕
-![mahalle.li/@yildirim](https://img.shields.io/mastodon/follow/000000354?domain=https%3A%2F%2Fmahalle.li&style=social)
 
 ```python
 #!/usr/bin/python
@@ -18,7 +17,7 @@ class DevOpsEngineer:
 me = DevOpsEngineer()
 me.say_hi()
 ```
-| I couldn't manage to put this spotify side by side with the above code block, <br> because of my poor markdown skills :(	| [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=2xom3cnad7budvi6jeposxcnj&cover_image=true)](https://open.spotify.com/user/2xom3cnad7budvi6jeposxcnj) 	|
+| <a href="https://app.daily.dev/yildirim"><img src="https://api.daily.dev/devcards/7c7d0c23b29f43cd859039b8597ecd6e.png?r=ltj" width="400" alt="Yasin İsa YILDIRIM's Dev Card"/></a>	| [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=2xom3cnad7budvi6jeposxcnj&cover_image=true)](https://open.spotify.com/user/2xom3cnad7budvi6jeposxcnj) 	|
 |---	|---	|
 
 ------------------ Test ---------------------
