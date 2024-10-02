@@ -17,7 +17,7 @@ class DevOpsEngineer:
 me = DevOpsEngineer()
 me.say_hi()
 ```
-| <a href="https://youtu.be/o-YBDTqX_ZU"><img src="https://github.com/redsfyre/redsfyre/blob/master/devcard.svg" width="400" alt="Yasin Isa Yildirim's Dev Card"/></a> | [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=2xom3cnad7budvi6jeposxcnj&cover_image=true)](https://open.spotify.com/user/2xom3cnad7budvi6jeposxcnj) 	|
+| <a href="https://youtu.be/o-YBDTqX_ZU"><img src="https://github.com/redsfyre/redsfyre/blob/master/devcard.png" width="400" alt="Yasin Isa Yildirim's Dev Card"/></a> | [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=2xom3cnad7budvi6jeposxcnj&cover_image=true)](https://open.spotify.com/user/2xom3cnad7budvi6jeposxcnj) 	|
 |---	|---	|
 
 ------------------ Test ---------------------
